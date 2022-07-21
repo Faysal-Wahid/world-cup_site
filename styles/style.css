@@ -1,0 +1,289 @@
+/* google font import link */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Poppins:wght@100;700&display=swap');
+
+body{
+    margin: 0;
+}
+
+/* ----------------------------
+   Banner section styles start
+------------------------------- */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #161616;
+    border-radius: 25px;
+    margin: 50px 140px;
+}
+
+.banner-info {
+    margin-bottom: 4%;
+    width: 30%;
+}
+
+.banner-info h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    font-family: 'Poppins',
+sans-serif;
+}
+
+.banner-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins',
+sans-serif;
+}
+
+.special-button {
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.banner-img img{
+    
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.banner-img:hover .player-marcelo{
+    left: 70%;
+}
+/* Banner section styles end */
+
+/* --------------------------------
+aside and card section style start
+----------------------------------- */
+
+.card-section{
+    display: grid;
+    grid-template-columns: 290px auto;
+    margin: 50px 140px;
+}
+
+aside{
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+}
+.aside-button {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    row-gap: 20px;
+    
+}
+
+
+
+.normal-button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.aside-special-button{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+}
+
+/* aside section style end */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    display: grid;
+    row-gap: 10px;
+    border: rgb(37, 37, 37) solid 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card button{
+    font-size: medium;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card button{
+    width: 70px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*aside and card section style end--- */
+
+/*--------------------------
+footer section style start
+----------------------------*/
+footer{
+    color: white;
+    padding: 30px 0px;
+
+}
+.footer{
+    background-color: #080808; 
+}
+
+.footer-info{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+hr{
+    width: 1200px;
+    border-color: rgb(131, 134, 136);
+    margin-bottom: 40px;
+}
+.information{
+    display: flex;
+}
+
+.information a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.social-icon{
+    font-size: 50px;
+    margin-top: 40px;
+    
+}
+
+/* footer section style end---*/
+
+/*---------------------------------------------
+ second page style start (upcomming-match.html) 
+ ----------------------------------------------*/
+
+
+.flag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag h3{
+    margin: 0 20px;
+}
+
+.match-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* second page style end (upcomming-match.html) */
+
+
+/* **********************
+        Media Queries
+*************************/
+
+
+@media only screen and (min-width:0px) and (max-width:688px) {
+    .extra-button{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #161616;
+        border-radius: 25px;
+        margin: 2% 0.5%;
+        flex-direction: column;
+        align-items: center;
+     }  
+     aside{
+        background: none;
+     }     
+     .container{
+         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 500px;
+        width: 100%;
+        place-items: center; 
+    
+    }
+
+.card-section {
+    margin: 0 1%;
+    justify-content: center;
+    display:  flex;
+    width: 100%;
+
+    }
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+ .banner{
+    width: 100%;
+ }   
+ aside{
+    background: none;
+    
+ }
+.aside-button{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 120px;
+    width: 400px;
+    place-items: center;
+
+}
+
+.extra-button{
+    margin: 10px 400px;
+}
+@media only screen and (min-width:993px) and (max-width:1312px) {
+    .extra-button{
+        display: none;
+    }    
+}
+}
